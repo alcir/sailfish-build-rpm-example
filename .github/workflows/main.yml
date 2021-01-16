@@ -1,18 +1,16 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  build:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Build
     steps:
     - uses: actions/checkout@v2
-    - run: ls -al
-      shell: bash
-    - id: foo
+    - id: build
       uses: R1tschY/sailfish-sdk-action@master
       with:
         arch: 'armv7hl'
         release: '3.3.0.14'
         fix-version: false
-    - run: echo rpm-dir ${{ steps.foo.outputs.rpm-dir }} 
+    - run: echo rpm-dir ${{ steps.build.outputs.rpm-dir }} 
       shell: bash
