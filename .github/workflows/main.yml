@@ -9,6 +9,8 @@ jobs:
     - id: foo
       uses: R1tschY/sailfish-sdk-action@master
       with:
-        who-to-greet: 'Mona the Octocat'
+        arch: 'armv7hl'
+        release: '3.3.0.14'
+        fix-version: false
     - run: echo rpm-dir ${{ steps.foo.outputs.rpm-dir }} 
       shell: bash
