@@ -6,11 +6,16 @@ jobs:
     name: Build
     steps:
     - uses: actions/checkout@v2
+
     - id: build
-      uses: R1tschY/sailfish-sdk-action@master
+      uses: R1tschY/sailfish-sdk-action@v1
       with:
         arch: 'armv7hl'
         release: '3.3.0.14'
         fix-version: false
-    - run: echo rpm-dir ${{ steps.build.outputs.rpm-dir }} 
-      shell: bash
+
+    - name: Upload build result
+      uses: actions/upload-artifact@v2
+      with:
+        name: rpms
+        path: RPMS

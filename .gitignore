@@ -1,5 +1,11 @@
 *.user
 *~
+*.list
+*.o
+Makefile
+*.qm
+RPMS
+harbour-actiontest
 
 .idea
 .vscode
