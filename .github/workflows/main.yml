@@ -11,7 +11,7 @@ jobs:
       uses: R1tschY/sailfish-sdk-action@master
       with:
         arch: 'armv7hl'
-        release: '3.3.0.14'
+        release: '3.4.0.24'
         fix-version: false
         check: true
 
