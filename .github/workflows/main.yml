@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - id: build
-      uses: R1tschY/sailfish-sdk-action@v1
+      uses: R1tschY/sailfish-sdk-action@master
       with:
         arch: 'armv7hl'
         release: '3.3.0.14'
