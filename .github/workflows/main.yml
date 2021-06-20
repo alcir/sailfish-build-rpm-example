@@ -11,8 +11,9 @@ jobs:
       uses: R1tschY/sailfish-build-rpm@v1
       with:
         arch: 'armv7hl'
-        release: '4.1.0.24'
+        release: '4.0.1.48'
         fix-version: false
+        enable-debug: true
         check: true
 
     - name: Upload build result
@@ -31,8 +32,9 @@ jobs:
       uses: R1tschY/sailfish-build-rpm@v1
       with:
         arch: 'i486'
-        release: '4.1.0.24'
+        release: '4.0.1.48'
         fix-version: false
+        enable-debug: true
         check: true
 
     - name: Upload build result
@@ -51,8 +53,9 @@ jobs:
       uses: R1tschY/sailfish-build-rpm@v1
       with:
         arch: 'aarch64'
-        release: '4.1.0.24'
+        release: '4.0.1.48'
         fix-version: false
+        enable-debug: true
         check: true
 
     - name: Upload build result
