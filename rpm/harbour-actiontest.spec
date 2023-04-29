@@ -10,7 +10,7 @@ Name:       harbour-actiontest
 
 Summary:    My Sailfish OS Application
 Version:    0.1
-Release:    2
+Release:    3
 Group:      Qt/Qt
 License:    GPLv3
 URL:        http://example.org/
